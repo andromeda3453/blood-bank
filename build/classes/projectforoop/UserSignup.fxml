@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="443.0" style="-fx-background-color: #c62828;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectforoop.UserSignupController">
+   <effect>
+      <DropShadow blurType="TWO_PASS_BOX" color="#363535" />
+   </effect>
+   <children>
+      <Label layoutX="30.0" layoutY="14.0" prefHeight="46.0" prefWidth="98.0" text="SignUp" textFill="#fffefe">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Label>
+      <Label layoutX="32.0" layoutY="76.0" prefHeight="27.0" prefWidth="98.0" text="First name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="34.0" layoutY="190.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="237.0" layoutY="190.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="235.0" layoutY="76.0" prefHeight="27.0" prefWidth="108.0" text="Last name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextField fx:id="firstname" alignment="TOP_LEFT" layoutX="30.0" layoutY="110.0" promptText="Enter here...">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="password" layoutX="237.0" layoutY="227.0" prefHeight="25.0" prefWidth="157.0" promptText="Enter here..." />
+      <TextField fx:id="lastName" layoutX="237.0" layoutY="110.0" promptText="Enter here..." />
+      <TextField fx:id="username" layoutX="34.0" layoutY="227.0" promptText="Enter here..." />
+      <Button layoutX="36.0" layoutY="277.0" mnemonicParsing="false" onAction="#OnCancelButtonClicked" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 90;" text="Cancel" textFill="#c62828">
+         <effect>
+            <DropShadow color="#ffffffb2" height="17.86" radius="8.43" width="17.86" />
+         </effect></Button>
+      <Button layoutX="140.0" layoutY="277.0" mnemonicParsing="false" onAction="#OnRegisterButtonClicked" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 90;" text="Register" textFill="#c62828">
+         <effect>
+            <DropShadow color="#ffffffb2" height="17.86" radius="8.43" width="17.86" />
+         </effect></Button>
+      <Label layoutX="35.0" layoutY="153.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Label>
+      <RadioButton fx:id="male" layoutX="130.0" layoutY="158.0" mnemonicParsing="false" selected="true" text="Male" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="female" layoutX="235.0" layoutY="158.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$gender" />
+   </children>
+</AnchorPane>

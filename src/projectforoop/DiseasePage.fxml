@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectforoop.DiseasepageController">
+   <children>
+      <TableView fx:id="table" prefHeight="600.0" prefWidth="1290.0" style="-fx-background-color: #ffcdd2; -fx-region-background: #ffcdd2;" styleClass="table-row-cell">
+        <columns>
+          <TableColumn fx:id="name" minWidth="2.0" prefWidth="268.0" style="-fx-background-color: #ffffff;" text="Disease" />
+            <TableColumn fx:id="symp" prefWidth="505.0" style="-fx-background-color: #ffffff;" text="Symptoms" />
+            <TableColumn fx:id="treat" prefWidth="567.0" style="-fx-background-color: #ffffff;" text="Treatment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
